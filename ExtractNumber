@@ -4,12 +4,10 @@ public class ExtractNumber {
 
 	public static void main(String[] args) {
   
-		    Scanner scanner=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         System.out.println("Please Enter the Number you want to extract");
         int num=scanner.nextInt();
-        ExtractNumber.extractNumber(num);
- 
-		
+        ExtractNumber.extractNumber(num);	
 	}
 
 	public static void extractNumber(int num) {
@@ -19,9 +17,8 @@ public class ExtractNumber {
 		while (num > 0) {
 
 			rem = num % 10;
-      System.out.println(rem);
-			num = num / 10;
-			
+                        System.out.println(rem);
+			num = num / 10;			
 		}
 	
 	}
