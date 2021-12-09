@@ -1,0 +1,45 @@
+package P1;
+
+import java.util.*;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Please Enter the number");
+
+		int num = scanner.nextInt();
+
+		Palindrome.checkPalindrome(num);
+
+	}
+
+	public static void checkPalindrome(int num) {
+
+		int temp = num;
+
+		int rem, rev = 0;
+
+		while (num > 0) {
+
+			rem = num % 10;
+
+			rev = rev * 10 + rem;
+
+			num = num / 10;
+
+		}
+
+		if (temp == rev) {
+			System.out.println(temp + " is Palindrome number");
+		}
+
+		else {
+			System.out.println(temp + " is not Palindrome number");
+		}
+
+	}
+
+}
